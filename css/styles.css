@@ -1,0 +1,146 @@
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  background-color: #333;
+  color:#fff;
+}
+
+p,span,strong,em, div{
+  font-family: 'Acherus', 'Nunito Sans', sans-serif;
+  }
+  .title, .banner-title, .question .title p, .topnav, .btn, .number {
+  font-family: 'gineso-condensed', 'Barlow Condensed', sans-serif;
+  }
+  
+.header {
+  overflow: hidden;
+  background-color: #fff;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  display: flex;
+}
+/*logo*/
+.header a.logo {
+ display:block;
+ position:relative;
+ width:100%;
+ max-width:100%
+}
+ #logo .logo-image {
+  display:block;
+  position:absolute;
+  height:3em;
+  max-width:100%
+ }
+
+.header a:hover {
+  background-color: #E87722;
+  color: white;
+}
+
+.right {
+  float:right !important
+ }
+
+.hidden {
+  color: #333;
+}
+
+.sbmt {
+  background-color: #861f41;
+  color:#fff;
+  box-shadow: 0 0 6px #999;
+}
+
+.red{
+  color: #861f41;
+}
+
+.active, .btn:hover, .btnF:hover {
+  background-color: #5c5f61;
+  color: #fff;
+}
+
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show > .btn-light.dropdown-toggle {
+  background-color: #5c5f61;
+  color: #fff;
+  border-color: #5c5f61;
+}
+
+input[type="radio"] {
+  display:none;   
+}
+
+/*----- Form -----*/
+ 
+ /*----- Toggle Button -----*/
+ .topnav {
+  overflow: hidden;
+  float: right;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  #logo .logo-image {
+    position: relative;
+  }
+  
+  }
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position:inherit;
+    right: 0;
+    top: 0;
+  }
+  #logo .logo-image {
+    position: relative;
+  }
+ 
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 770px) {
+    
+  .col {
+    flex-basis: auto !important;
+  }
+  .btn-group-justified {
+    
+    width: 100%;
+    
+}
+#myDIV{
+    
+  width: 100%;
+  
+}
+
+  }
+
+
+}

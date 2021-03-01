@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Virginia Tech Giving Day 2021 | Donate
+		</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="format-detection" content="telephone=no">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- VT brand fonts -->
+		<link rel="stylesheet" href="https://www.assets.cms.vt.edu/fonts/fonts.css" />
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+		<script src="js/scripts.js"></script>
+		<link rel="shortcut icon" href="#">
+
+	</head>
+
+	<body>
+		<!--HEADER LOGO MENU-->
+		<div class="header">
+			<div id="logo" class="logo">
+				<img alt="" class="logo-image" src="images/logo-maroon-whiteBG.svg" focusable="false" aria-hidden="true">
+			</div>
+			<div class="topnav" id="topnav">
+				<a href="https://vt.edu/">Home</a>
+				<a href="#contact">Contact</a>
+				<a href="javascript:void(0);" class="icon" onclick="functionHeader()">
+				<i class="toggle-nav" href="#">&#9776;</i>
+				</a>
+			</div>
+		</div>
+		<!--END HEADER LOGO MENU-->
+		<!--BODY-->
+		<div style="padding-left:20px">
+			<br>
+			<h1>Philanthropic gifts online</h1>
+			<h2>Your gift makes the difference.</h2>
+			<label>Or enter a gift</label>
+			<!--FORM-->
+			<div class="container">
+				<div class="row">
+					<form class="form-inline align-items-end" id="formGif">
+						<div class="col">
+						<label class="control-label col-xs-3">Select a gift amount:</label>
+							<div class="form-group">
+								<div class="btn-group shadow-0 btn-group-justified" id="myDIV">
+									<button type="button" class="btn btn-light red" value="25.00" >$25</button>
+									<button type="button" class="btn btn-light red" value="50.00" >$50</button>
+									<button type="button" class="btn btn-light red" value="100.00">$100</button>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<label class="control-label col-xs-3">amount:</label>
+							<div class="form-group">
+								<div class="input-group">
+									<span class="input-group-text title p red">$</span>
+									<input id="amount" type="number" name="amount" step="any" class="form-control" min="0.01" max="10000" value="0.00">
+								</div>
+							</div>
+						</div>
+
+						<div class="col">
+							<label class="control-label col-xs-3">Gift frecuency:</label>
+							<div class="form-group">
+								<div class="btn-group" data-toggle="buttons" id="frecuency">
+									<label class="btn btn-light red active">
+										<input type="radio" name="frecuency_options" value="oneTime" checked="checked">One-time
+									</label>
+									<label class="btn btn-light red">
+										<input type="radio" name="frecuency_options" value="monthly">Monthly
+									</label>
+								  </div>
+							</div>
+						</div>
+
+						<div class="col">
+							<label class="hidden">.</label>
+							<div class="form-group">
+								<button type="submit" onclick="myFunction2()" class="btn sbmt w-100">GIVE ONE-TIME</button>
+							</div>
+						</div>
+
+
+
+					</form>
+
+
+ 
+				</div>
+			</div>
+			<!-- END FORM-->
+	</body>
+</html>
