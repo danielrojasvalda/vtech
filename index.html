@@ -55,19 +55,20 @@
 						<div class="col">
 						<label class="control-label col-xs-3">Select a gift amount:</label>
 							<div class="form-group">
-								<div class="btn-group shadow-0 btn-group-justified" id="myDIV">
+								<div class="btn-group shadow-0 btn-group-justified" id="amountGroup">
 									<button type="button" class="btn btn-light red" value="25.00" >$25</button>
 									<button type="button" class="btn btn-light red" value="50.00" >$50</button>
 									<button type="button" class="btn btn-light red" value="100.00">$100</button>
 								</div>
 							</div>
 						</div>
+
 						<div class="col">
 							<label class="control-label col-xs-3">amount:</label>
 							<div class="form-group">
 								<div class="input-group">
 									<span class="input-group-text title p red">$</span>
-									<input id="amount" type="number" name="amount" step="any" class="form-control" min="0.01" max="10000" value="0.00">
+									<input id="amount" type="number" name="amount" step="any" oninput="maxLengthCheck(this)" class="form-control" min="0.01" max="10000" value="0.00">
 								</div>
 							</div>
 						</div>
@@ -87,18 +88,13 @@
 						</div>
 
 						<div class="col">
-							<label class="hidden">.</label>
-							<div class="form-group">
-								<button type="submit" onclick="myFunction2()" class="btn sbmt w-100">GIVE ONE-TIME</button>
-							</div>
+							<label class="control-label col-xs-3 hidden">-</label>
+								<div class="form-group">
+									<button type="submit" onclick="functionSubmit()" class="btn sbmt w-100">GIVE ONE-TIME</button>
+								</div>
+
 						</div>
-
-
-
 					</form>
-
-
- 
 				</div>
 			</div>
 			<!-- END FORM-->

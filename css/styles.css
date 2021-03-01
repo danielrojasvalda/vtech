@@ -1,3 +1,5 @@
+/*--GLOBAL STYLES--*/
+
 * {box-sizing: border-box;}
 
 body { 
@@ -6,13 +8,30 @@ body {
   color:#fff;
 }
 
-p,span,strong,em, div{
+p,span,strong,em, div {
   font-family: 'Acherus', 'Nunito Sans', sans-serif;
   }
-  .title, .banner-title, .question .title p, .topnav, .btn, .number {
+
+.title, .banner-title, .question .title p, .topnav, .btn, .number {
   font-family: 'gineso-condensed', 'Barlow Condensed', sans-serif;
   }
-  
+
+.red {
+  color: #861f41;
+}
+
+.active, .btn:hover, .btnF:hover {
+  background-color: #5c5f61;
+  color: #fff;
+}
+
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show > .btn-light.dropdown-toggle {
+  background-color: #5c5f61;
+  color: #fff;
+  border-color: #5c5f61;
+}
+
+/*--HEADER LOGO--*/
 .header {
   overflow: hidden;
   background-color: #fff;
@@ -30,19 +49,21 @@ p,span,strong,em, div{
   border-radius: 4px;
   display: flex;
 }
-/*logo*/
+
+/*--HEADER LOGO--*/
 .header a.logo {
- display:block;
- position:relative;
- width:100%;
- max-width:100%
+  display:block;
+  position:relative;
+  width:100%;
+  max-width:100%
 }
- #logo .logo-image {
+
+#logo .logo-image {
   display:block;
   position:absolute;
   height:3em;
   max-width:100%
- }
+}
 
 .header a:hover {
   background-color: #E87722;
@@ -51,41 +72,10 @@ p,span,strong,em, div{
 
 .right {
   float:right !important
- }
-
-.hidden {
-  color: #333;
 }
 
-.sbmt {
-  background-color: #861f41;
-  color:#fff;
-  box-shadow: 0 0 6px #999;
-}
-
-.red{
-  color: #861f41;
-}
-
-.active, .btn:hover, .btnF:hover {
-  background-color: #5c5f61;
-  color: #fff;
-}
-
-.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show > .btn-light.dropdown-toggle {
-  background-color: #5c5f61;
-  color: #fff;
-  border-color: #5c5f61;
-}
-
-input[type="radio"] {
-  display:none;   
-}
-
-/*----- Form -----*/
- 
- /*----- Toggle Button -----*/
- .topnav {
+/*--HEADER TOGGLE BUTTON--*/
+.topnav {
   overflow: hidden;
   float: right;
 }
@@ -94,7 +84,24 @@ input[type="radio"] {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+/*--HIDDEN LITTLE FIXES--*/ 
+.hidden {
+  color: #333;
+}
+
+/*--RADIO STYLE--*/
+input[type="radio"] {
+  display:none;   
+}
+
+/*--BOTON SUBMIT--*/
+.sbmt {
+  background-color: #861f41;
+  color:#fff;
+  box-shadow: 0 0 6px #999;
+}
+
+@media screen and (max-width: 576px) {
   .topnav a {display: none;}
   .topnav a.icon {
     float: right;
@@ -103,10 +110,12 @@ input[type="radio"] {
   #logo .logo-image {
     position: relative;
   }
-  
+  .form-inline .input-group .btn-group {
+    width: 100% !important;
   }
+}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position:inherit;
@@ -116,7 +125,10 @@ input[type="radio"] {
   #logo .logo-image {
     position: relative;
   }
- 
+  .form-inline .input-group {
+    width: 100%;
+  }
+
   .topnav.responsive a {
     float: none;
     display: block;
@@ -124,23 +136,10 @@ input[type="radio"] {
     width: 100%;
   }
 
+  /*fix responsive col*/
   @media screen and (max-width: 770px) {
-    
-  .col {
-    flex-basis: auto !important;
+    .col {
+      flex-basis: auto !important;
+    }
   }
-  .btn-group-justified {
-    
-    width: 100%;
-    
-}
-#myDIV{
-    
-  width: 100%;
-  
-}
-
-  }
-
-
 }
