@@ -8,6 +8,21 @@ The brand colors are available here: https://brand.vt.edu/identity/color/color-u
 
 The requirements:
 
+
+
+.btn-group.special {
+    display: flex;
+    flex-wrap: wrap !important;
+}
+
+@media screen and (max-width: 570px) {
+    .col {
+      flex-basis: auto !important;
+    }
+    .special .btn {
+      flex: 1;
+    }
+
 - must adhere to comp elements/layout  OK
 - must include all comp options and working features (all but actual submit action)    
 - must be responsive based on Bootstrap 4   OK 

@@ -20,9 +20,10 @@ p,span,strong,em, div {
   color: #861f41;
 }
 
-.active, .btn:hover, .btnF:hover {
+.active, .btn:hover {
   background-color: #5c5f61;
   color: #fff;
+  border-color: #5c5f61;
 }
 
 .btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show > .btn-light.dropdown-toggle {
@@ -31,6 +32,9 @@ p,span,strong,em, div {
   border-color: #5c5f61;
 }
 
+.btn {
+  border-color: #5c5f61;
+}
 /*--HEADER LOGO--*/
 .header {
   overflow: hidden;
@@ -101,7 +105,11 @@ input[type="radio"] {
   box-shadow: 0 0 6px #999;
 }
 
-@media screen and (max-width: 576px) {
+.form-inline label {
+  justify-content: left;
+}
+/*--RESPONSIVE HEADER--*/
+@media screen and (max-width: 574px) {
   .topnav a {display: none;}
   .topnav a.icon {
     float: right;
@@ -110,21 +118,17 @@ input[type="radio"] {
   #logo .logo-image {
     position: relative;
   }
-  .form-inline .input-group .btn-group {
-    width: 100% !important;
-  }
 }
 
-@media screen and (max-width: 576px) {
+/*--RESPONSIVE FORM--*/
+@media screen and (max-width: 574px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position:inherit;
     right: 0;
     top: 0;
   }
-  #logo .logo-image {
-    position: relative;
-  }
+
   .form-inline .input-group {
     width: 100%;
   }
@@ -136,10 +140,31 @@ input[type="radio"] {
     width: 100%;
   }
 
-  /*fix responsive col*/
+  /**Responsive col*/
   @media screen and (max-width: 770px) {
     .col {
       flex-basis: auto !important;
     }
   }
+
+  .btn-group.special {
+    display: flex;
+    flex-wrap: wrap !important;
+}
+.special .btn {
+  flex: 1;
+}
+
+/*justify frecuency*/
+.btn, .btn-group-justified > .btn-group {
+  display: table-cell;
+}
+
+.btn-group-justified {
+  display: table;
+  width: 100%;
+  float: none;
+
+  
+}
 }
