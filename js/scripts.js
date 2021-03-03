@@ -26,18 +26,15 @@ $(document).ready(function() {
 		});
   	});
 
-/*-- FUNCTION AMOUNT GROUP--*/
+/*-- FUNCTION AMOUNT --*/
 function maxLengthCheck(object) {
-	if (object.value.length > object.max.length) {	
-		object.value = object.value.slice(0, object.max.length);
+	if (parseInt(object.value) > parseInt(object.max)) {
 		alert("The minimum amount is $0.01\nThe maximum amount is $10000\nPlease check the input value: $"+object.value);
 	}
 }
 
-
-
 /*-- FUNCTION FRECUENCY--*/
-$(document).ready(function(){
+$(document).ready(function() {
 	$('#frecuency').change(function(){
 		selected_value = $("input[name='frecuency_options']:checked").val();
 	});
